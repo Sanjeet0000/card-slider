@@ -53,6 +53,7 @@ const CardSlider = ({ slide }) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 1024) {
+        setCurrentSlide(0);
         setNumSlides(1);
       } else {
         setNumSlides(3);
