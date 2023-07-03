@@ -8,7 +8,10 @@ const CardSlider = ({ slide }) => {
     return (
       <div
         key={id}
-        className="flex flex-col inline p-4 m-2 shadow-md bg-blue-300"
+        className="flex flex-col inline p-4 m-2 shadow-md bg-blue-300 transition-transform
+        duration-700
+        transform
+        hover:scale-105"
       >
         <img className="w-64 inline" src={card.imageUrl} alt={card.title} />
         <h2 className="text-xl font-bold inline">{card.title}</h2>
